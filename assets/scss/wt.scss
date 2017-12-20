@@ -1,0 +1,90 @@
+// 宽屏
+@import "base/variables";
+// 字体大小
+$font-size:		16px !default;
+$line-height:	32px !default;
+$font-color:	$white;
+$border-size:	2px !default;
+$min-width: 1200px;
+$max-width: 2000px;
+$mheight:	$min-width/2;
+// ----分隔符----
+// 线条样式
+$divide-type:	1px solid #ccc;
+// 分隔符内字体
+$divide-size:	36px;
+// 间距
+$divide-outer-size:	16px 0px 32px 0px;
+// 弹出框遮罩背景色
+$popupbg:	$black;
+// 弹出框背景色
+$popupboxbg:	$white;
+// 边框
+$popupborder:	1px solid #eee;
+// 圆角
+$popupradius:	5px;
+// 标题
+$title-size:20px;
+$title-inner:20px 16px 8px;
+
+
+// -------菜单行高-----
+$nav-height:	$line-height*1.5;
+// logo两边间距
+$logo-both-size:0px 20px;
+// 是否显示菜单按钮
+$is-menubut:	false;
+// 菜单是否显示一行
+$is-line:		true;
+// 菜单内间距
+$menu-inner-size:		0px 10px;
+$menu-outer-size:		0px 20px;
+// 右菜单距边距离
+$right-menu-outer-size:	0px 8px 0px 0px;
+// 右菜单内间距
+$right-menu-inner-size:	0px 6px;
+
+// -------banner高度------
+$banner-height:	400px;
+// banner左右按钮大小
+$banner-font-size:	36px;
+// banner左右按钮颜色
+$banner-font-color:	#ccc;
+// banner按钮距两边距离
+$banner-subboth-size:	28px;
+// banner切换按钮大小距离
+$banner-changesub-size:	18px;
+// banner切换按钮位置
+$banner-changesub-bottom:	16px;
+// banner切换按钮间距
+$banner-changesub-inner: 0px 12px;
+// 切换按钮颜色
+$banner-sub-color:	#eee;
+// 切换按钮选中颜色
+$banner-sub-sel-color:	#ccc;
+
+// ------列表--------
+// 一排三个盒子单个宽
+$listthree-size:32%;
+// 分割盒子宽
+$listthreeline-show:inline-block;
+$listthreeline-size:2%;
+// 一排四个盒子单个宽
+$listfour-size:23.5%;
+// 分割盒子宽
+$listfourline-show:inline-block;
+$listfourline-size:2%;
+// 卡片
+$card-inner-size:0px;
+$card-border:1px solid #eee;
+// 卡片内容
+$card-content-size:16px;
+$card-content-line:28px;
+$card-content-inner:6px 16px;
+
+@import "base/_compatible";
+@import "base/_box";
+@import "base/_nav";
+@import "base/_banner";
+@import "base/_list";
+// @import "base/_ico";

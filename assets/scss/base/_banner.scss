@@ -1,0 +1,58 @@
+.banner{
+	text-align: center;
+	height: $banner-height;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	& .showbox{
+		& .alonebox{
+			height: $banner-height;
+			position: relative;
+			& img{
+				height: $banner-height;
+				width: auto;
+			}
+			& .btxt{
+				width: 100%;
+				height: $banner-height;
+				line-height: $banner-height;
+				position: absolute;
+				left: 0px;
+				top:0px;
+				text-align: center;
+			}
+		}
+	}
+	& .rightbut,& .leftbut{
+		font-size: $banner-font-size;
+		height: $banner-height;
+		line-height: $banner-height;
+		position: absolute;
+		top: 0px;
+		color: $banner-font-color;
+		vertical-align: middle;
+	}
+	& .rightbut{
+		right: $banner-subboth-size;
+	}
+	& .leftbut{
+		left: $banner-subboth-size;
+	}
+	& .numbut{
+		width: 100%;
+		position: absolute;
+		left: 0px;
+		bottom: $banner-changesub-bottom;
+		& li{
+			display: inline-block;
+			width: $banner-changesub-size;
+			height: $banner-changesub-size;
+			background: $banner-sub-color;
+			border-radius: 50%;
+			margin:$banner-changesub-inner;
+		}
+		& .act{
+			background: $banner-sub-sel-color;
+		}
+	}
+}

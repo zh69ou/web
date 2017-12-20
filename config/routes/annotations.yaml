@@ -1,0 +1,10 @@
+admin:
+    resource: ../../bundle/Admin/Controller/
+    type: annotation
+alone:
+    resource: ../../bundle/Alone/Controller/
+    type: annotation
+user:
+    resource: ../../bundle/User/Controller/
+    type: annotation
+

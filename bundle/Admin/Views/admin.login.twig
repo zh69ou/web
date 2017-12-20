@@ -1,0 +1,31 @@
+{% extends 'base.twig' %}
+
+{% block cssbox %}
+{{ parent() }}
+<link rel="stylesheet" href="/css/wt.css">
+{% endblock %}
+
+{% block body %}
+<div class="container propbox">
+  <div class="nav">
+    <div class="logo">
+      <a href="" title="首页" ><img src="/image/logo.png" alt="logo" title="logo">品牌LOGO</a>
+      <span class="menubut"></span>
+    </div>
+    <ul class="menu"><li><a href="/" title="首页">首页</a></li><li><a href="#" title="新闻中心">新闻中心</a></li><li><a href="#" title="功能中心">功能中心</a></li><li><a href="#" title="帮助中心">帮助中心</a><li></ul>
+  </div>
+  <div class="cbox ctxt">
+    <div class="title">管理员登录</div>
+    <form action="{{ path('adminland') }}">
+      <div class="group-input"><label class="prefix" for="username">账号</label><input type="text" name="username" id="username" value="" placeholder="用户名/电话/邮箱"></div>
+      <div class="group-input"><label class="prefix" for="password">密码</label><input type="password" name="password" id="password" value="" placeholder="密码"></div>
+      <div class="group-but"><button type="reset">重置</button><button type="button">登录</button></div>
+      <input type="hidden" name="_token" value="{{ tokenstring }}">
+    </form>
+  </div>
+</div>
+{% endblock %}
+
+{% block jsbox %}
+{{ parent() }}
+{% endblock %}

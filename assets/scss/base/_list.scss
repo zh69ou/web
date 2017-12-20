@@ -1,0 +1,76 @@
+// 一排三个
+.list3{
+	width: $listthree-size;
+	display: inline-block;
+}
+.list3line{
+	width: $listthreeline-size;
+	display: $listthreeline-show;
+}
+// 一排四个
+.list4{
+	width: $listfour-size;
+	display: inline-block;
+}
+.list4line{
+	width: $listfourline-size;
+	display: $listthreeline-show;
+}
+
+// 卡片
+.card{
+	padding: $card-inner-size;
+	border: $card-border;
+	& .content{
+		font-size: $card-content-size;
+		padding: $card-content-inner;
+		line-height: $card-content-line;
+	}
+}
+
+// 标题
+.title{
+	font-size: $title-size;
+	padding: $title-inner;
+}
+// 输入组
+.group-input{
+	border: 1px solid #eee;
+	border-radius: 8px;
+	line-height: $line-height;
+	width: 80%;
+	margin: 8px auto;
+	& > .prefix{
+		display: inline-block;
+		text-align: right;
+		padding-right: 8px;
+		width: 30%;
+		height: $line-height;
+		line-height: $line-height;
+		border:0px;
+		border-right: 1px solid #eee;
+	}
+	& > input{
+		display: inline-block;
+		width: 70%;
+		height: $line-height;
+		line-height: $line-height;
+		border:0px;
+		border-radius: 0px 8px 8px 0px;
+		padding-left: 8px;
+	}
+}
+.group-but{
+	line-height: $line-height;
+	display: inline-block;
+	margin: 12px auto 0px;
+	& button{
+		height: $line-height;
+		line-height: $line-height;
+		background-color:$white;
+		margin: 6px 18px;
+		padding:0px 16px;
+		border:1px solid #eee;
+		border-radius: 8px;
+	}
+}

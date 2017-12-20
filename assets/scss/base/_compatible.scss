@@ -1,0 +1,51 @@
+$comp:("","-ms-","-moz-","-webkit-","-o-");
+// 兼容函数
+@mixin compatible($str,$attr){
+	@each $v in $comp{
+		#{$v}#{$str}: $attr;
+	}
+}
+// 过度
+@mixin transition($attr) {
+	@include compatible('transition',$attr);
+}
+// 动画
+@mixin animation($attr) {
+	@include compatible('animation',$attr);
+}
+// 旋转
+@mixin transform($attr) {
+	@include compatible('transform',$attr);
+}
+// 旋转元素的基点位置
+@mixin transform-origin($attr) {
+	@include compatible('transform-origin',$attr);
+}
+// 动画变形控制
+@mixin keyframes($name,$attr){
+	@keyframes #{$name} {
+		@each $i,$val in $attr{
+			#{$i}{transform: #{$val}}
+		}
+	}
+	@-webkit-keyframes #{$name} {
+		@each $i,$val in $attr{
+			#{$i}{-webkit-transform: #{$val}}
+		}
+	}
+	@-moz-keyframes #{$name} {
+		@each $i,$val in $attr{
+			#{$i}{-moz-transform: #{$val}}
+		}
+	}
+	@-ms-keyframes #{$name} {
+		@each $i,$val in $attr{
+			#{$i}{-ms-transform: #{$val}}
+		}
+	}
+	@-o-keyframes #{$name} {
+		@each $i,$val in $attr{
+			#{$i}{-o-transform: #{$val}}
+		}
+	}
+}

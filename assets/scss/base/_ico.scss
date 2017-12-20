@@ -1,0 +1,31 @@
+.ico-time{
+    width: $font-size;
+    height: $font-size;
+    line-height: $font-size;
+    background-color: transparent;
+    box-shadow: inset 0px 0px 0px $border-size $font-color;
+    border-radius: 50%;
+    position: relative;
+    float: left;
+    &:after,&:before{
+    	position: absolute;
+    	content: "";
+    	background-color: $font-color;
+    	height: $border-size;
+    	top: ($font-size - $border-size)/2;
+    	left: ($font-size - $border-size)/2;
+    	@include transform-origin(1px 1px);
+    }
+    &:after{
+    	width: ($font-size * .46);
+    	@include animation(minutediv 2s linear infinite);
+    }
+    &:before{
+    	width: ($font-size * .4);
+    	@include animation(hourdiv 8s linear infinite);
+    }
+ }
+$linear:( 0%:rotate(0deg),100%:rotate(360deg));
+@include keyframes(minutediv , $linear);
+$linear:( 0%:rotate(0deg),100%:rotate(360deg));
+@include keyframes(hourdiv , $linear);

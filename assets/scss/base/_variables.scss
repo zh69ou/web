@@ -1,0 +1,36 @@
+// 基础
+// 白色
+$white:     #fff !default;
+// 灰色
+$gray:		#adb5bd !default;
+// 黑色
+$black:     #000 !default;
+// 蓝色
+$blue:      #6610f2 !default;
+// 红色
+$red:       #dc3545 !default;
+// 黄色
+$yellow:    #ffc107 !default;
+// 绿色
+$green:     #28a745 !default;
+
+// 主色
+$primary:       $gray !default;
+// 信息
+$info:          $gray !default;
+// 成功
+$success:       $green !default;
+// 错误
+$warning:       $yellow !default;
+// 危险
+$danger:        $red !default;
+
+*{
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+a{text-decoration:none;color: $primary}
+ul li{list-style: none;}
+.bbg{background: $white}

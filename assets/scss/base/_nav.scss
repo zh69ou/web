@@ -1,0 +1,47 @@
+.nav{
+	width: 100%;
+	height: $nav-height;
+	line-height: $nav-height;
+	& .logo{
+		padding: $logo-both-size;
+		display: inline-block;
+		& img{
+			height: $line-height;
+			width: auto;
+			vertical-align: middle;
+		}
+		@if $is-menubut==false
+		{
+			& .menubut{
+				display: none;
+			}
+		}
+	}
+	@if $is-line==true
+	{
+		& .menu,& .menu li,& .rmenu li{
+			display: inline-block;
+		}
+		& .menu li{
+			padding: $menu-inner-size;
+			margin: $menu-outer-size;
+		}
+		& .rmenu{
+			float: right;
+			margin: $right-menu-outer-size;
+		}
+		& .rmenu li{
+			padding: $right-menu-inner-size;
+		}
+	}
+}
+.centernav{
+	text-align: center;
+	height: $nav-height;
+	line-height: $nav-height;
+	& li{
+		display: inline-block;
+		padding: $menu-inner-size;
+		margin: $menu-outer-size;
+	}
+}
