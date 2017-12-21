@@ -30,6 +30,8 @@ class ComposerStaticInit35747beed372f98af673034890e1be8a
             'Symfony\\Flex\\' => 13,
             'Symfony\\Component\\Yaml\\' => 23,
             'Symfony\\Component\\Workflow\\' => 27,
+            'Symfony\\Component\\Validator\\' => 28,
+            'Symfony\\Component\\Translation\\' => 30,
             'Symfony\\Component\\Routing\\' => 26,
             'Symfony\\Component\\PropertyAccess\\' => 33,
             'Symfony\\Component\\Inflector\\' => 28,
@@ -113,6 +115,14 @@ class ComposerStaticInit35747beed372f98af673034890e1be8a
         'Symfony\\Component\\Workflow\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/workflow',
+        ),
+        'Symfony\\Component\\Validator\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/validator',
+        ),
+        'Symfony\\Component\\Translation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/translation',
         ),
         'Symfony\\Component\\Routing\\' => 
         array (

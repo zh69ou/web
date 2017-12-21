@@ -52,15 +52,17 @@ final class Versions
   'symfony/polyfill-mbstring' => 'v1.6.0@2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296',
   'symfony/property-access' => 'v4.0.2@8dc059852b7bdd8b871eb3ca95b8d70be3b39488',
   'symfony/routing' => 'v4.0.2@972810def5cae044d19195045f7eb418141bf37b',
+  'symfony/translation' => 'v4.0.2@e2678768d2fcb7fe3d8108392626de1ece575634',
   'symfony/twig-bridge' => 'v4.0.2@aeb221936ad39c579b7e002dfd4e7544a5d666f6',
   'symfony/twig-bundle' => 'v4.0.2@77381f8b99b319dc83e609c66942eb3a0a5b066d',
+  'symfony/validator' => 'v4.0.2@26fc2a1e167ef1193def50f03d39e40456c8ccb9',
   'symfony/workflow' => 'v4.0.2@c4eb6034e6b4b37fd42e307471b4c976021ea69d',
   'symfony/yaml' => 'v4.0.2@a5ee52d155f06ad23b19eb63c31228ff56ad1116',
   'twig/twig' => 'v2.4.4@eddb97148ad779f27e670e1e3f19fb323aedafeb',
   'zendframework/zend-code' => '3.3.0@6b1059db5b368db769e4392c6cb6cc139e56640d',
   'zendframework/zend-eventmanager' => '3.2.0@9d72db10ceb6e42fb92350c0cb54460da61bd79c',
   'symfony/dotenv' => 'v4.0.2@ffcaeab01e42b0c40669add2aa8e77f79ddb9389',
-  '__root__' => 'dev-master@a200ba3321031521c5ee0a2151b858df9b149b30',
+  '__root__' => 'dev-master@ad4703cba412cdc005908701b2cc9304e37b00af',
 );
 
     private function __construct()
